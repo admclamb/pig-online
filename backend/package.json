@@ -1,4 +1,18 @@
 {
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "knexfile.js",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

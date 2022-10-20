@@ -1,8 +1,19 @@
-import { io } from 'https://cdn.socket.io/4.4.1/socket.io.esm.min.js';
+'use strict';
 
-('use strict');
+console.log('YO');
+import { Game } from './Game';
 
-class Dice {}
+// const socket = io();
+
+class Main {
+  static init() {
+    const game = new Game();
+    console.log('Game started');
+  }
+}
+
+console.log('STARTING');
+Main.init();
 
 // Selecting elements
 // const player0El = document.querySelector('.player--0');

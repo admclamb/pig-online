@@ -1,7 +1,9 @@
+import { Player } from './Player';
+
 export class Game {
   constructor(player1Name = 'Player 1', player2Name = 'Player 2') {
-    this.player1 = { score: 0, name: player1Name };
-    this.player2 = { score: 0, name: player2Name };
+    this.player1 = new Player(player1Name);
+    this.player2 = new Player(player2Name);
     this.turn = player1;
   }
 
